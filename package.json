@@ -1,7 +1,7 @@
 {
   "name": "@pokusew/buffertools",
   "main": "buffertools",
-  "version": "2.1.7",
+  "version": "2.1.8",
   "keywords": [
     "buffer",
     "buffers"
@@ -18,8 +18,8 @@
     "url": "https://github.com/pokusew/node-buffertools.git"
   },
   "scripts": {
-    "prepublish":"npm ls",
-    "preinstall":"npm install node-pre-gyp",
+    "prepublish": "npm ls",
+    "preinstall": "npm install node-pre-gyp",
     "install": "node-pre-gyp install --fallback-to-build",
     "test": "node test.js"
   },
