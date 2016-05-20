@@ -1,46 +1,46 @@
 {
-	"name": "@pokusew/buffertools",
-	"main": "buffertools",
-	"version": "2.1.4",
-	"keywords": [
-		"buffer",
-		"buffers"
-	],
-	"description": "Working with node.js buffers made easy.",
-	"homepage": "https://github.com/pokusew/node-buffertools",
-	"author": {
-		"name": "Ben Noordhuis",
-		"email": "info@bnoordhuis.nl",
-		"url": "http://bnoordhuis.nl/"
-	},
-	"repository": {
-		"type": "git",
-		"url": "https://github.com/pokusew/node-buffertools.git"
-	},
-	"scripts": {
-		"preinstall": "npm install node-pre-gyp",
-		"install": "node-pre-gyp install --fallback-to-build",
-		"test": "node test.js",
-		"prepublish": "npm ls",
-		"build": "node-pre-gyp build",
-		"package": "node-pre-gyp package",
-		"publish": "node-pre-gyp publish"
-	},
-	"bin": {
-		"node-pre-gyp": "./node_modules/.bin/node-pre-gyp"
-	},
-	"binary": {
-		"module_name": "buffertools",
-		"module_path": "./lib/binding/{configuration}/{node_abi}-{platform}-{arch}/",
-		"remote_path": "./{module_name}/releases/download/v{version}/",
-		"package_name": "{module_name}-v{version}-{node_abi}-{platform}-{arch}.tar.gz",
-		"host": "https://github.com/pokusew"
-	},
-	"dependencies": {
-		"nan": "2.x",
-		"node-pre-gyp": "0.6.x"
-	},
-	"devDependencies": {
-		"aws-sdk": "2.x"
-	}
+  "name": "@pokusew/buffertools",
+  "main": "buffertools",
+  "version": "2.1.5",
+  "keywords": [
+    "buffer",
+    "buffers"
+  ],
+  "description": "Working with node.js buffers made easy.",
+  "homepage": "https://github.com/pokusew/node-buffertools",
+  "author": {
+    "name": "Ben Noordhuis",
+    "email": "info@bnoordhuis.nl",
+    "url": "http://bnoordhuis.nl/"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/pokusew/node-buffertools.git"
+  },
+  "scripts": {
+    "preinstall": "npm install node-pre-gyp",
+    "install": "node-pre-gyp install --fallback-to-build",
+    "test": "node test.js",
+    "prepublish": "npm ls",
+    "build": "node-pre-gyp build",
+    "package": "node-pre-gyp package",
+    "publish": "node-pre-gyp publish"
+  },
+  "bin": {
+    "node-pre-gyp": "./node_modules/.bin/node-pre-gyp"
+  },
+  "binary": {
+    "module_name": "buffertools",
+    "module_path": "./lib/binding/{configuration}/{node_abi}-{platform}-{arch}/",
+    "remote_path": "./{module_name}/releases/download/v{version}/",
+    "package_name": "{module_name}-v{version}-{node_abi}-{platform}-{arch}.tar.gz",
+    "host": "https://github.com/pokusew"
+  },
+  "dependencies": {
+    "nan": "2.x",
+    "node-pre-gyp": "0.6.x"
+  },
+  "devDependencies": {
+    "aws-sdk": "2.x"
+  }
 }
