@@ -19,8 +19,9 @@
   },
   "scripts": {
     "prepublish": "npm ls",
+    "preinstall": "npm install node-pre-gyp",
     "install": "node-pre-gyp install --fallback-to-build",
-    "test": "node test.js"
+    "test": "mocha"
   },
   "bin": {
     "node-pre-gyp": "./node_modules/.bin/node-pre-gyp"
@@ -32,9 +33,6 @@
     "package_name": "{module_name}-v{version}-{node_abi}-{platform}-{arch}.tar.gz",
     "host": "https://github.com/pokusew"
   },
-  "bundledDependencies": [
-    "node-pre-gyp"
-  ],
   "dependencies": {
     "nan": "2.x",
     "node-pre-gyp": "0.6.x"
