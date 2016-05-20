@@ -18,10 +18,10 @@
     "url": "https://github.com/pokusew/node-buffertools.git"
   },
   "scripts": {
-    "preinstall": "npm install node-pre-gyp",
+    "prepublish":"npm ls",
+    "preinstall":"npm install node-pre-gyp",
     "install": "node-pre-gyp install --fallback-to-build",
-    "test": "node test.js",
-    "prepublish": "npm ls"
+    "test": "node test.js"
   },
   "bin": {
     "node-pre-gyp": "./node_modules/.bin/node-pre-gyp"
