@@ -32,7 +32,7 @@
   "binary": {
     "module_name": "buffertools",
     "module_path": "./lib/binding/{configuration}/{node_abi}-{platform}-{arch}/",
-    "remote_path": "./{module_name}/releases/download/v{version}/",
+    "remote_path": "./node-{module_name}/releases/download/v{version}/",
     "package_name": "{module_name}-v{version}-{node_abi}-{platform}-{arch}.tar.gz",
     "host": "https://github.com/pokusew"
   },
