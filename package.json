@@ -1,7 +1,7 @@
 {
   "name": "@pokusew/buffertools",
   "main": "buffertools",
-  "version": "2.1.9",
+  "version": "2.1.10",
   "keywords": [
     "buffer",
     "buffers"
