@@ -20,11 +20,10 @@ var Buffer = require('buffer').Buffer;
 var events = require('events');
 var util = require('util');
 
-try {
-	var buffertools = require('./build/Release/buffertools.node');
-} catch (e) {
-	var buffertools = require('./build/Debug/buffertools.node');
-}
+var binary = require('node-pre-gyp');
+var path = require('path');
+var binding_path = binary.find(path.resolve(path.join(__dirname,'./package.json')));
+var buffertools = require(binding_path);
 
 exports.extend = function() {
 	var receivers;
