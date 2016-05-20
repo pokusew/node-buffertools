@@ -21,10 +21,7 @@
     "preinstall": "npm install node-pre-gyp",
     "install": "node-pre-gyp install --fallback-to-build",
     "test": "node test.js",
-    "prepublish": "npm ls",
-    "build": "node-pre-gyp build",
-    "package": "node-pre-gyp package",
-    "publish": "node-pre-gyp publish"
+    "prepublish": "npm ls"
   },
   "bin": {
     "node-pre-gyp": "./node_modules/.bin/node-pre-gyp"
